@@ -102,6 +102,7 @@ body {
 }
 
 .navlist {
+    right: -20;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -424,6 +425,9 @@ h2 {
 }
 
 .contactDiv {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #397D87;
     width:100%;
     padding: 10px;
@@ -432,34 +436,33 @@ h2 {
 .contactDiv ul{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .contactDiv ul li {
     text-align: center;
     text-decoration: none;
     list-style-type: none;
+    margin-right: 20px;
 }
 .contactDiv ul a {
     font-size: 40px;
     color:#D39464;
-    box-shadow:2px 2px 6px #87a930;
    
 }
 
-.contactDiv ul a i:hover{
-    font-size: 30px;
-}
 .contactDiv ul a i {
-    box-shadow:2px 2px 2px  #A93073;
+    color:#FDDE71;
+    box-shadow:2px 2px 6px #87a930;
     margin-bottom: 15px;
     margin-top: 15px;
-    font-size: 50px;
+    font-size: 40px;
+    opacity: 0.8;
 
 }
+.contactDiv ul a i:hover{
+    opacity: 1;
+}
+
 .contactDiv ul h4 {
     font-size: 20px;
     color: #a93073c6;
@@ -485,7 +488,7 @@ h2 {
         display: none;
         position: fixed;
         top: 20px;
-        right: 0;
+        right: -20px;
         width: 200px; /* Adjust width as needed */
         padding: 20px; /* Adjust padding as needed */
         
