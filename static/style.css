@@ -425,10 +425,8 @@ h2 {
 
 .contactDiv {
     background-color: #397D87;
-    border-radius: 20px;
-    width:70%;
+    width:100%;
     padding: 10px;
-    box-shadow:5px 5px 5px #397c8770;
 }
 
 .contactDiv ul{
@@ -453,7 +451,7 @@ h2 {
 }
 
 .contactDiv ul a i:hover{
-    font-size: 50px;
+    font-size: 30px;
 }
 .contactDiv ul a i {
     box-shadow:2px 2px 2px  #A93073;
