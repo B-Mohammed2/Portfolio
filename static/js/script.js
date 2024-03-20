@@ -1,11 +1,27 @@
 // List of colors
-const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+const colors = [
+    "#ff0000", // Red
+    "#00ff00", // Green
+    "#0000ff", // Blue
+    "#ffff00", // Yellow
+    "#ff00ff", // Magenta
+    "#00ffff", // Cyan
+    "#ff8000", // Orange
+    "#8000ff", // Purple
+    "#0080ff", // Light Blue
+    "#ff0080", // Pink
+    "#ffcc00", // Yellow Orange
+    "#9900ff", // Violet
+    "#00cc00", // Dark Green
+    "#cc0066", // Rose
+    "#00cccc"  // Sky Blue
+];
 
 const neonGroup = document.querySelector('.neonGroup');
 
 // Function to create neon divs based on container width
 function createNeonDivs(containerWidth) {
-    const neonDivWidth = 19; // Width of each neon div in pixels
+    const neonDivWidth = 18; // Width of each neon div in pixels
     const numDivs = Math.ceil(containerWidth / neonDivWidth); // Calculate number of divs needed to fill the container width
 
     // Clear previous divs
