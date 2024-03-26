@@ -102,5 +102,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+/* Open the pop-up form */
+function openForm() {
+    document.getElementById("hireForm").style.display = "block";
+  }
+  
+  /* Close the pop-up form */
+  function closeForm() {
+    document.getElementById("hireForm").style.display = "none";
+  }
+  
 

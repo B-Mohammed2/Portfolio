@@ -45,11 +45,36 @@
         <div class="hire">
             <div class="hireCont">
                 <h2>Do you like my skill?</h2>
-                <button type="submit">Hire me</button></div>
+                <!-- Button to open the pop-up form -->
+                <button type="submit" onclick="openForm()">Hire me</button>
+                
+            </div>
+            <!-- pop-up form -->
+            <div class="form-popup" id="hireForm">
+                <form action="/submit-hire-form" class="form-container">
+                <h2>Fill out the form to hire me</h2>
+            
+                <label for="hire-name"><b>Name</b></label>
+                <input type="text" placeholder="Enter your name" name="hire-name" id="hire-name" required>
+            
+                <label for="hire-email"><b>Email</b></label>
+                <input type="email" placeholder="Enter your email" name="email" id="hire-email" required>
+            
+                <label for="hire-message"><b>Message</b></label>
+                <textarea placeholder="Enter your message" name="hire-message" id="hire-message" required></textarea>
+            
+                <button type="submit" class="btn" id="submit-hire">Submit</button>
+                <button type="button" class="btn" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <div class="hiremessage" id="hire-message">
+                <h3>Thank you for your interest in hiring me. I'll be in touch soon!</h3>
+            </div>
+
             
             <div class="hireCont"> 
                 <h2 class="cv">Check my CV here</h2>
-                <a href="" class="cvFile"><img src="/static/img/profile.png" alt="cv-icon"></a>
+                <a href="/static/Begard Mohammede.pdf" target="_blank" class="cvFile"><img src="/static/img/profile.png" alt="cv-icon"></a>
             </div>
            
         </div>
@@ -61,14 +86,15 @@
             
             <div class="card">
                 <a href="https://b-mohammed2.github.io/bootstrapProject/" target="_blank" class="cardImage">
-                <img src="img_avatar2.png" alt="Avatar" style="width:100%"></a>
+                <img src="/static/img/lili-pro.png" alt="Avatar" style="width:100%;height: 25.5vh;">
+            </a>
                 <div class="cardContent">
                   <h3><b>Bootstrap Project</b></h3> 
                 </div>
             </div>
             <div class="card">
                 <a href="https://b-mohammed2.github.io/canvas/" class="cardImage" target="_blank">
-                <img src="img_avatar2.png" alt="Avatar" style="width:100%"></a>
+                <img src="/static/img/canvas-pro.png" alt="Avatar" style="width:100%"></a>
                 <div class="cardContent">
                  <h3><b>Canvas Drawing</b></h3> 
                  </div>

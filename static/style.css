@@ -252,7 +252,7 @@ body {
 }
 
 
-.message {
+.message, .hiremessage {
     background-color: rgb(107, 144, 221);
     height: 150px;
     padding: 10px;
@@ -294,7 +294,7 @@ textarea {
     height: 100px;
 }
 
-button[type="submit"] {
+button[type="submit"],[type="button"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -309,11 +309,16 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
+/* When the Submit button is clicked, change the background color */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 0.6;
+}
 
 /* girl in hoody img */
 .divImage2{
     margin-right: 20px;
 }
+
 .divImage2 img{
     width: 100%;
 }
@@ -347,7 +352,7 @@ h2 {
     align-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 150px;
+    width: 220px;
     background-color: #e2c4c1eb;
     border-radius: 10px;
     overflow: hidden;
@@ -507,7 +512,37 @@ h2 {
         justify-content: center;
         flex-wrap: wrap;
     }
-
     
 }
+
+/* The pop-up form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #fefefe;
+    padding: 20px;
+    max-width: 300px;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 100%;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], 
+  .form-container input[type=email], 
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+ 
 
