@@ -9,7 +9,14 @@ import { getDatabase, ref, set, get, child  } from "https://www.gstatic.com/fire
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  
+  apiKey: "AIzaSyDmug2IRC9zs3q0CAg5X0zQZoWsIub6D-I",
+  authDomain: "begard-portfolio.firebaseapp.com",
+  databaseURL: "https://begard-portfolio-default-rtdb.firebaseio.com",
+  projectId: "begard-portfolio",
+  storageBucket: "begard-portfolio.appspot.com",
+  messagingSenderId: "394800492138",
+  appId: "1:394800492138:web:4b4563e6bbac62deb92413",
+  measurementId: "G-8ERCPD3MGG"
 }
 
 // Initialize Firebase
