@@ -58,7 +58,8 @@ document.getElementById("submit-hire").addEventListener('click',function(e) {
   {
     username: document.getElementById('hire-name').value,
     email: document.getElementById('hire-email').value,
-    message: document.getElementById('hire-message').value
+    message: document.getElementById('hire-message').value,
+    submissionDate: new Date().toISOString() 
 
   });
 
